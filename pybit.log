@@ -1,0 +1,181 @@
+2022-12-08 14:39:29,490 DEBUG Initializing HTTP session.
+2022-12-08 14:39:29,502 DEBUG Loaded middleware 'LoggingMiddleware'
+2022-12-08 14:39:29,505 DEBUG Using proactor: IocpProactor
+2022-12-08 14:39:29,507 DEBUG Make request: "getMe" with data: "{}" and files "None"
+2022-12-08 14:39:29,854 DEBUG Response for getMe: [200] "'{"ok":true,"result":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":true}}'"
+2022-12-08 14:39:29,854 INFO Bot: Фиолетовый бот [@purple_indifferent_bot]
+2022-12-08 14:39:29,855 DEBUG Make request: "getWebhookInfo" with data: "{}" and files "None"
+2022-12-08 14:39:29,969 DEBUG Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":8}}'"
+2022-12-08 14:39:29,970 DEBUG Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2022-12-08 14:39:30,082 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2022-12-08 14:39:30,082 WARNING Updates were skipped successfully.
+2022-12-08 14:39:30,083 DEBUG Using proactor: IocpProactor
+2022-12-08 14:39:30,092 DEBUG Make request: "setWebhook" with data: "{'url': 'https://breadwheathead.pythonanywhere.com'}" and files "{}"
+2022-12-08 14:39:32,489 DEBUG Response for setWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was set"}'"
+2022-12-08 14:41:28,855 WARNING Shutting down...
+2022-12-08 14:41:28,855 DEBUG Make request: "deleteWebhook" with data: "{}" and files "None"
+2022-12-08 14:41:29,186 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was deleted"}'"
+2022-12-08 14:41:29,186 WARNING Bye!
+2022-12-08 14:42:07,279 DEBUG Initializing HTTP session.
+2022-12-08 14:42:07,290 DEBUG Loaded middleware 'LoggingMiddleware'
+2022-12-08 14:42:07,292 DEBUG Using proactor: IocpProactor
+2022-12-08 14:42:07,293 DEBUG Make request: "getMe" with data: "{}" and files "None"
+2022-12-08 14:42:07,650 DEBUG Response for getMe: [200] "'{"ok":true,"result":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":true}}'"
+2022-12-08 14:42:07,650 INFO Bot: Фиолетовый бот [@purple_indifferent_bot]
+2022-12-08 14:42:07,651 DEBUG Make request: "getWebhookInfo" with data: "{}" and files "None"
+2022-12-08 14:42:07,766 DEBUG Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":4}}'"
+2022-12-08 14:42:07,766 DEBUG Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2022-12-08 14:42:07,900 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2022-12-08 14:42:07,900 WARNING Updates were skipped successfully.
+2022-12-08 14:42:07,900 DEBUG Using proactor: IocpProactor
+2022-12-08 14:42:07,902 DEBUG Make request: "setWebhook" with data: "{'url': 'https://breadwheathead.pythonanywhere.com'}" and files "{}"
+2022-12-08 14:42:10,217 DEBUG Response for setWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was set"}'"
+2022-12-08 14:42:10,220 ERROR unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-6' coro=<_run_app() done, defined at C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py:289> exception=gaierror(11001, 'getaddrinfo failed')>
+Traceback (most recent call last):
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py", line 516, in run_app
+    loop.run_until_complete(main_task)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py", line 415, in _run_app
+    await site.start()
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web_runner.py", line 121, in start
+    self._server = await loop.create_server(
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1459, in create_server
+    infos = await tasks.gather(*fs)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1399, in _create_server_getaddrinfo
+    infos = await self._ensure_resolved((host, port), family=family,
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1395, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 855, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2022-12-08 14:45:34,694 DEBUG Initializing HTTP session.
+2022-12-08 14:45:34,705 DEBUG Loaded middleware 'LoggingMiddleware'
+2022-12-08 14:45:34,707 DEBUG Using proactor: IocpProactor
+2022-12-08 14:45:34,708 DEBUG Make request: "getMe" with data: "{}" and files "None"
+2022-12-08 14:45:35,065 DEBUG Response for getMe: [200] "'{"ok":true,"result":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":true}}'"
+2022-12-08 14:45:35,066 INFO Bot: Фиолетовый бот [@purple_indifferent_bot]
+2022-12-08 14:45:35,066 DEBUG Make request: "getWebhookInfo" with data: "{}" and files "None"
+2022-12-08 14:45:35,188 DEBUG Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"https://breadwheathead.pythonanywhere.com","has_custom_certificate":false,"pending_update_count":0,"max_connections":40,"ip_address":"35.173.69.207"}}'"
+2022-12-08 14:45:35,189 DEBUG Make request: "deleteWebhook" with data: "{}" and files "None"
+2022-12-08 14:45:35,306 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was deleted"}'"
+2022-12-08 14:45:35,307 DEBUG Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2022-12-08 14:45:35,444 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2022-12-08 14:45:35,444 WARNING Updates were skipped successfully.
+2022-12-08 14:45:35,445 DEBUG Using proactor: IocpProactor
+2022-12-08 14:45:35,447 DEBUG Make request: "setWebhook" with data: "{'url': 'https://breadwheathead.pythonanywhere.com'}" and files "{}"
+2022-12-08 14:45:37,782 DEBUG Response for setWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was set"}'"
+2022-12-08 14:45:37,785 ERROR unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-7' coro=<_run_app() done, defined at C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py:289> exception=gaierror(11001, 'getaddrinfo failed')>
+Traceback (most recent call last):
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py", line 516, in run_app
+    loop.run_until_complete(main_task)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py", line 415, in _run_app
+    await site.start()
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web_runner.py", line 121, in start
+    self._server = await loop.create_server(
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1459, in create_server
+    infos = await tasks.gather(*fs)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1399, in _create_server_getaddrinfo
+    infos = await self._ensure_resolved((host, port), family=family,
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1395, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 855, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2022-12-08 14:49:57,713 DEBUG Initializing HTTP session.
+2022-12-08 14:49:57,729 DEBUG Loaded middleware 'LoggingMiddleware'
+2022-12-08 14:49:57,730 DEBUG Using proactor: IocpProactor
+2022-12-08 14:49:57,732 DEBUG Make request: "getMe" with data: "{}" and files "None"
+2022-12-08 14:49:58,093 DEBUG Response for getMe: [200] "'{"ok":true,"result":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":true}}'"
+2022-12-08 14:49:58,094 INFO Bot: Фиолетовый бот [@purple_indifferent_bot]
+2022-12-08 14:49:58,094 DEBUG Make request: "getWebhookInfo" with data: "{}" and files "None"
+2022-12-08 14:49:58,215 DEBUG Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"https://breadwheathead.pythonanywhere.com","has_custom_certificate":false,"pending_update_count":0,"max_connections":40,"ip_address":"35.173.69.207"}}'"
+2022-12-08 14:49:58,216 DEBUG Make request: "deleteWebhook" with data: "{}" and files "None"
+2022-12-08 14:49:58,331 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was deleted"}'"
+2022-12-08 14:49:58,332 DEBUG Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2022-12-08 14:49:58,450 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2022-12-08 14:49:58,450 WARNING Updates were skipped successfully.
+2022-12-08 14:49:58,451 DEBUG Using proactor: IocpProactor
+2022-12-08 14:49:58,454 DEBUG Make request: "setWebhook" with data: "{'url': 'https://breadwheathead.pythonanywhere.com'}" and files "{}"
+2022-12-08 14:50:00,928 DEBUG Response for setWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was set"}'"
+2022-12-08 14:50:00,931 ERROR unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-7' coro=<_run_app() done, defined at C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py:289> exception=gaierror(11001, 'getaddrinfo failed')>
+Traceback (most recent call last):
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py", line 516, in run_app
+    loop.run_until_complete(main_task)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web.py", line 415, in _run_app
+    await site.start()
+  File "C:\projects\telebots\orders\bybit_aiogram_bot\venv\lib\site-packages\aiohttp\web_runner.py", line 121, in start
+    self._server = await loop.create_server(
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1459, in create_server
+    infos = await tasks.gather(*fs)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1399, in _create_server_getaddrinfo
+    infos = await self._ensure_resolved((host, port), family=family,
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1395, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 855, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Bread\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2022-12-08 14:50:58,467 DEBUG Initializing HTTP session.
+2022-12-08 14:50:58,479 DEBUG Loaded middleware 'LoggingMiddleware'
+2022-12-08 14:50:58,481 DEBUG Using proactor: IocpProactor
+2022-12-08 14:50:58,482 DEBUG Make request: "getMe" with data: "{}" and files "None"
+2022-12-08 14:50:58,816 DEBUG Response for getMe: [200] "'{"ok":true,"result":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":true}}'"
+2022-12-08 14:50:58,816 INFO Bot: Фиолетовый бот [@purple_indifferent_bot]
+2022-12-08 14:50:58,816 DEBUG Make request: "getWebhookInfo" with data: "{}" and files "None"
+2022-12-08 14:50:58,929 DEBUG Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"https://breadwheathead.pythonanywhere.com","has_custom_certificate":false,"pending_update_count":0,"max_connections":40,"ip_address":"35.173.69.207"}}'"
+2022-12-08 14:50:58,930 DEBUG Make request: "deleteWebhook" with data: "{}" and files "None"
+2022-12-08 14:50:59,047 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was deleted"}'"
+2022-12-08 14:50:59,047 DEBUG Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2022-12-08 14:50:59,157 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2022-12-08 14:50:59,157 WARNING Updates were skipped successfully.
+2022-12-08 14:50:59,158 DEBUG Using proactor: IocpProactor
+2022-12-08 14:50:59,161 DEBUG Make request: "setWebhook" with data: "{'url': 'https://f653-176-215-100-51.eu.ngrok.io'}" and files "{}"
+2022-12-08 14:51:01,519 DEBUG Response for setWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was set"}'"
+2022-12-08 14:51:07,434 DEBUG Received update [ID:383909847]
+2022-12-08 14:51:07,435 INFO Received message [ID:2903] in chat [private:1533275740]
+2022-12-08 14:51:07,440 DEBUG Make request: "sendMessage" with data: "{'chat_id': 1533275740, 'text': 'Введите код криптовалюты, например SOL, BTC, ETH.'}" and files "None"
+2022-12-08 14:51:07,591 DEBUG Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":2904,"from":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot"},"chat":{"id":1533275740,"first_name":"\\u0418\\u043b\\u044c\\u044f","username":"breadwheat","type":"private"},"date":1670485867,"text":"\\u0412\\u0432\\u0435\\u0434\\u0438\\u0442\\u0435 \\u043a\\u043e\\u0434 \\u043a\\u0440\\u0438\\u043f\\u0442\\u043e\\u0432\\u0430\\u043b\\u044e\\u0442\\u044b, \\u043d\\u0430\\u043f\\u0440\\u0438\\u043c\\u0435\\u0440 SOL, BTC, ETH."}}'"
+2022-12-08 14:51:07,592 DEBUG Unhandled message [ID:2903] in chat [private:1533275740]
+2022-12-08 14:51:07,593 INFO Process update [ID:383909847]: [success] (in 158 ms)
+2022-12-08 14:51:07,594 INFO ::1 [08/Dec/2022:07:51:07 +0000] "POST / HTTP/1.1" 200 153 "-" "-"
+2022-12-08 14:51:11,004 DEBUG Received update [ID:383909848]
+2022-12-08 14:51:11,004 INFO Received message [ID:2905] in chat [private:1533275740]
+2022-12-08 14:51:11,006 DEBUG Starting new HTTPS connection (1): api.bybit.com:443
+2022-12-08 14:51:13,035 DEBUG https://api.bybit.com:443 "GET /v2/public/tickers?symbol=ETHUSDT HTTP/1.1" 200 754
+2022-12-08 14:51:13,037 DEBUG Make request: "sendMessage" with data: "{'chat_id': 1533275740, 'text': 'Текущий курс ETH: 1233.3$'}" and files "None"
+2022-12-08 14:51:13,187 DEBUG Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":2906,"from":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot"},"chat":{"id":1533275740,"first_name":"\\u0418\\u043b\\u044c\\u044f","username":"breadwheat","type":"private"},"date":1670485873,"text":"\\u0422\\u0435\\u043a\\u0443\\u0449\\u0438\\u0439 \\u043a\\u0443\\u0440\\u0441 ETH: 1233.3$"}}'"
+2022-12-08 14:51:13,188 DEBUG Unhandled message [ID:2905] in chat [private:1533275740]
+2022-12-08 14:51:13,188 INFO Process update [ID:383909848]: [success] (in 2184 ms)
+2022-12-08 14:51:13,190 INFO ::1 [08/Dec/2022:07:51:11 +0000] "POST / HTTP/1.1" 200 153 "-" "-"
+2022-12-08 14:51:45,592 DEBUG Received update [ID:383909849]
+2022-12-08 14:51:45,592 INFO Received message [ID:2907] in chat [private:1533275740]
+2022-12-08 14:51:45,593 DEBUG Make request: "sendMessage" with data: "{'chat_id': 1533275740, 'text': 'Принимается только текст!', 'reply_to_message_id': 2907}" and files "None"
+2022-12-08 14:51:45,994 DEBUG Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":2908,"from":{"id":5605337710,"is_bot":true,"first_name":"\\u0424\\u0438\\u043e\\u043b\\u0435\\u0442\\u043e\\u0432\\u044b\\u0439 \\u0431\\u043e\\u0442","username":"purple_indifferent_bot"},"chat":{"id":1533275740,"first_name":"\\u0418\\u043b\\u044c\\u044f","username":"breadwheat","type":"private"},"date":1670485905,"reply_to_message":{"message_id":2907,"from":{"id":1533275740,"is_bot":false,"first_name":"\\u0418\\u043b\\u044c\\u044f","username":"breadwheat","language_code":"ru"},"chat":{"id":1533275740,"first_name":"\\u0418\\u043b\\u044c\\u044f","username":"breadwheat","type":"private"},"date":1670485905,"photo":[{"file_id":"AgACAgIAAxkBAAILW2ORl5HurI9LKXpNjQXa8KUMeiQyAAL8vTEbUU6RSBCoPkZiUM7kAQADAgADcwADKwQ","file_unique_id":"AQAD_L0xG1FOkUh4","file_size":2108,"width":90,"height":90},{"file_id":"AgACAgIAAxkBAAILW2ORl5HurI9LKXpNjQXa8KUMeiQyAAL8vTEbUU6RSBCoPkZiUM7kAQADAgADbQADKwQ","file_unique_id":"AQAD_L0xG1FOkUhy","file_size":25177,"width":320,"height":319},{"file_id":"AgACAgIAAxkBAAILW2ORl5HurI9LKXpNjQXa8KUMeiQyAAL8vTEbUU6RSBCoPkZiUM7kAQADAgADeAADKwQ","file_unique_id":"AQAD_L0xG1FOkUh9","file_size":45206,"width":500,"height":498}]},"text":"\\u041f\\u0440\\u0438\\u043d\\u0438\\u043c\\u0430\\u0435\\u0442\\u0441\\u044f \\u0442\\u043e\\u043b\\u044c\\u043a\\u043e \\u0442\\u0435\\u043a\\u0441\\u0442!"}}'"
+2022-12-08 14:51:45,994 DEBUG Make request: "deleteMessage" with data: "{'chat_id': 1533275740, 'message_id': 2907}" and files "None"
+2022-12-08 14:51:46,137 DEBUG Response for deleteMessage: [200] "'{"ok":true,"result":true}'"
+2022-12-08 14:51:46,138 DEBUG Unhandled message [ID:2907] in chat [private:1533275740]
+2022-12-08 14:51:46,138 INFO Process update [ID:383909849]: [success] (in 546 ms)
+2022-12-08 14:51:46,139 INFO ::1 [08/Dec/2022:07:51:45 +0000] "POST / HTTP/1.1" 200 153 "-" "-"
+2022-12-08 14:51:55,170 WARNING Shutting down...
+2022-12-08 14:51:55,170 DEBUG Make request: "deleteWebhook" with data: "{}" and files "None"
+2022-12-08 14:51:55,288 DEBUG Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook was deleted"}'"
+2022-12-08 14:51:55,288 WARNING Bye!
